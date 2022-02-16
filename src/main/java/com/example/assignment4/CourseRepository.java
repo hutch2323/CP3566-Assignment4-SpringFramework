@@ -5,4 +5,6 @@ import com.example.assignment4.Course;
 // CRUD refers Create, Read, Update, Delete
 
 public interface CourseRepository extends CrudRepository<Course, Integer> {
+    Course findCourseByCourseId(Integer courseId);
 }
+
